@@ -278,6 +278,8 @@ LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 \
 
 [https://github.com/atsushi-m-ito/openmx-patch-oneapi/](https://github.com/atsushi-m-ito/openmx-patch-oneapi/)
 
+ここのReleaseからダウンロードできます。
+
 ### パッチの適用方法
 
 このパッチの対象は、OpenMX version 3.9.9 になります。事前に本家のソースコード(ver3.9)に、本家のパッチ(3.9.9)を当てておいてください。
@@ -285,7 +287,7 @@ LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 \
 その上で以下のコマンドを参考に、今回のパッチを当ててください。
 ```
 cd openmx3.9/source/
-tar xvfz ~~.tgz
+tar xvfz openmx-patch-oneapi-patch-v1-for-openmx3.9.9.tar.gz
 
 #以下コンパイル
 make -j install
