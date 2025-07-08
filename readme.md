@@ -284,10 +284,10 @@ LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 \
 
 このパッチの対象は、OpenMX version 3.9.9 になります。事前に本家のソースコード(ver3.9)に、本家のパッチ(3.9.9)を当てておいてください。
 
-その上で以下のコマンドを参考に、今回のパッチを当ててください。
+その上で以下のコマンドを参考に、今回のパッチ(ファイル名は仮に`v1.tar.gz`)を当ててください。
 ```
 cd openmx3.9/source/
-tar xvfz openmx-patch-oneapi-patch-v1-for-openmx3.9.9.tar.gz
+tar xvfz v1.tar.gz --strip-components 1
 
 #以下コンパイル
 make -j install
